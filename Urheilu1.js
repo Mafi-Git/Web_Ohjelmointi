@@ -1,4 +1,5 @@
 class Henkilo{
+    //constructor
     constructor(first, last, callname, birthyear){
         this.first = first;
         this.last = last;
@@ -36,6 +37,7 @@ class Henkilo{
 
 
 class Urheilija extends Henkilo{
+    //constructor
     constructor(link_to_pic, weight, sport, accomplishments){
         super();
         this.link_to_pic = link_to_pic;
@@ -44,6 +46,7 @@ class Urheilija extends Henkilo{
         this.accomplishments = accomplishments;
     }
 
+    //getters and setters
     set link_to_pic(value){
         this.linkki_kuvaan = value;
     }
@@ -70,7 +73,7 @@ class Urheilija extends Henkilo{
     }
 }
 
-
+//Creating a new urheilija type object
 let urheilija = new Urheilija();
 urheilija.etunimi = "pekka";
 urheilija.sukunimi = "poutama";
